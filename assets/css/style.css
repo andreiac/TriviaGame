@@ -41,3 +41,24 @@ text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .
 padding-top: 100px;
 padding-bottom: 100px;
 }
+
+#populatedQuestion{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 50px;
+    color: violet;
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
+}
+
+#populatedAnswer{
+    font-family: 'Nanum Brush Script', cursive;
+font-size: 50px;
+color: turquoise;
+width: 100%;
+justify-content: center;
+display: inline-flex;
+text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
+}
+

@@ -1,100 +1,92 @@
 //question and answer bank
 
-var questionsAndAnswers = {
-    Q1: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-    Q2: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-    Q3: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-    Q4: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-    Q5: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-    Q6: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-    Q7: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-    Q8: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-    Q9: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-    Q10: {
-        question: "21 2nd Street",
-        answer1: "New York",
-        answer2: "NY",
-        answer3: "10021",
-        answer4: "kjalkjlfk",
-    },
-
-};
+setTimeout(function () {
+    $("#start").text("Ready!");
+}, 1000);
+setTimeout(function () {
+    $("#start").text("Set!");
+}, 2000);
+setTimeout(function () {
+    $("#start").text("Start!");
+}, 3000);
+setTimeout(function () {
+    $("#start").remove();
+}, 4000);
 
 
 
 
-function displayQuestionsAndAnswers() {
+setTimeout(function () {
 
-    $("#buttons-view").empty();
-    // Loops through the array of questions
+    var questionsAndAnswers = 
+    {
+        questions:[
+        {
+            question: "On what show was zach morris a character?",
+            answer1: "saved by the bell",
+            answer2: "different world",
+            answer3: "zach attack",
+            answer4: "all that",
+        },
+        {
+            question: "On what show was alannis morriset a character?",
+            answer1: "saved by the bell",
+            answer2: "different world",
+            answer3: "zach attack",
+            answer4: "all that",
+        },
+        {
+            question: "On what show was snoop dog a character?",
+            answer1: "saved by the bell",
+            answer2: "different world",
+            answer3: "zach attack",
+            answer4: "all that",
+        },
+        {
+            question: "On what show was barney a character?",
+            answer1: "saved by the bell",
+            answer2: "different world",
+            answer3: "zach attack",
+            answer4: "all that",
+        },
+    ]};
 
-    for (var i = 0; i < questionsAndAnswers.length; i++) {
 
-      // Then dynamicaly generates buttons for each movie in the array
-      // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
-      var a = $("<button>");
-      // Adds a class of movie to our button
-      a.addClass("movie");
-      // Added a data-attribute
-      a.attr("data-name", movies[i]);
-      // Provided the initial button text
-      a.text(movies[i]);
-      // Added the button to the buttons-view div
-      $("#buttons-view").append(a);
+    var ques= questionsAndAnswers ['questions']
+    for (var i=0; i <ques.length; i++){
+        var questionDiv = $("<div id=populatedQuestion>");
+        var answer1Div = $("<div id=populatedAnswer>");
+        var answer2Div = $("<div id=populatedAnswer>");
+        var answer3Div = $("<div id=populatedAnswer>");
+        var answer4Div = $("<div id=populatedAnswer>");
+
+var question = ques[i].question;
+var answer1 = ques[i].answer1;
+var answer2 = ques[i].answer2;
+var answer3 = ques[i].answer3;
+var answer4 = ques[i].answer4;
+
+
+var pQuestion = $("<p>").text(question);
+var pAnswer1 = $("<p>").text(answer1);
+var pAnswer2 = $("<p>").text(answer2);
+var pAnswer3 = $("<p>").text(answer3);
+var pAnswer4 = $("<p>").text(answer4);
+
+
+questionDiv.append(pQuestion);
+answer1Div.append(pAnswer1);
+answer2Div.append(pAnswer2);
+answer3Div.append(pAnswer3);
+answer4Div.append(pAnswer4);
+    
+    
+$("#divsAppearHere").append(questionDiv);
+$("#divsAppearHere").append(answer1Div);
+$("#divsAppearHere").append(answer2Div);
+$("#divsAppearHere").append(answer3Div);
+$("#divsAppearHere").append(answer4Div);
     }
-  }
 
+}, 4000)
+ 
