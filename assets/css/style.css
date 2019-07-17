@@ -10,23 +10,28 @@ h1{
 .question
 {
 font-family: 'Caveat Brush', cursive;
-font-size: 50px;
+font-size: 40px;
 color: violet;
 width: 100%;
 justify-content: center;
 display: inline-flex;
 text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
+padding: 0px;
+padding-top: 5px;
+margin: 0px;
 }
 
 .answer
 {
 font-family: 'Nanum Brush Script', cursive;
-font-size: 50px;
+font-size: 40px;
 color: turquoise;
 width: 100%;
 justify-content: center;
 display: inline-flex;
 text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
+padding: 0px;
+margin: 0px;
 }
 
 #start 
@@ -44,21 +49,82 @@ padding-bottom: 100px;
 
 #populatedQuestion{
     font-family: 'Caveat Brush', cursive;
-    font-size: 50px;
-    color: violet;
-    width: 100%;
-    justify-content: center;
-    display: inline-flex;
-    text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
-}
-
-#populatedAnswer{
-    font-family: 'Nanum Brush Script', cursive;
-font-size: 50px;
-color: turquoise;
+font-size: 40px;
+color: violet;
 width: 100%;
 justify-content: center;
 display: inline-flex;
 text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
+padding: 0px;
+padding-top: 5px;
+margin: 0px;
 }
 
+#populatedAnswer{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 40px;
+    color: turquoise;
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
+    padding: 0px;
+    margin: 0px;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+#timer{
+    font-family: 'Nanum Brush Script', cursive;
+font-size: 40px;
+color: black;
+width: 100%;
+justify-content: center;
+display: inline-flex;
+text-shadow: -.5px -.5px 0 white, .5px -.5px 0 white, -.5px .5px 0 white, .5px .5px 0 white;
+padding: 0px;
+margin: 0px;
+}
+
+.popup-overlay{
+    visibility: hidden;
+    position: absolute;
+    background: white;
+    border: 3px solid black;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+}
+
+.popup-overlay.active{
+    visibility: visible;
+    text-align: center;
+}
+
+.popup-content{
+    visibility: hidden;
+}
+
+.popup-content.active{
+    visibility: visible;
+}
+
+button{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    margin: .20rem;
+    font-size: 1rem;
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+button:hover{
+    border: 1px solid black;
+    background: black;
+    color: white;
+}
