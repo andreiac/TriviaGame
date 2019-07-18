@@ -1,4 +1,3 @@
-
 h1{
     font-family: 'Barriecito', cursive;
     font-weight: bold;
@@ -19,11 +18,14 @@ text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .
 padding: 0px;
 padding-top: 5px;
 margin: 0px;
+text-align: center;
 }
 
 .answer
 {
 font-family: 'Nanum Brush Script', cursive;
+cursor: pointer;
+
 font-size: 40px;
 color: turquoise;
 width: 100%;
@@ -32,6 +34,8 @@ display: inline-flex;
 text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
 padding: 0px;
 margin: 0px;
+text-align: center;
+;
 }
 
 #start 
@@ -45,6 +49,8 @@ display: inline-flex;
 text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;
 padding-top: 100px;
 padding-bottom: 100px;
+text-align: center;
+
 }
 
 #populatedQuestion{
@@ -89,28 +95,6 @@ padding: 0px;
 margin: 0px;
 }
 
-.popup-overlay{
-    visibility: hidden;
-    position: absolute;
-    background: white;
-    border: 3px solid black;
-    width: 50%;
-    height: 50%;
-    left: 25%;
-}
-
-.popup-overlay.active{
-    visibility: visible;
-    text-align: center;
-}
-
-.popup-content{
-    visibility: hidden;
-}
-
-.popup-content.active{
-    visibility: visible;
-}
 
 button{
     display: inline-block;
@@ -127,4 +111,39 @@ button:hover{
     border: 1px solid black;
     background: black;
     color: white;
+}
+
+.wrongBox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+
+
+#timesUp {
+    display: none;
+    background-repeat: no-repeat;
+    width: 35%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px;
+}
+
+.up {
+    color: rgb(97, 120, 252);
+}
+
+.timeRemain {
+    padding: 2%;
+    color: rgb(255, 0, 140);
+}
+
+#time-remain {
+    font-size: 60px;
+}
+#buttonContainer{
+    justify-content: center;
+    display: flex;
+
 }
